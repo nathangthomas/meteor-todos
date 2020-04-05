@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Tasks } from '../api/tasks.js';
 import Task from './Task.js';
@@ -24,7 +25,9 @@ class App extends Component {
 
     Tasks.insert({
       text,
-      createdAt: new Date(), // current time
+      createdAt: new Date(),            // current time
+      owner: Meteor.userId(),           // _id of logged in user
+      username: Meteor.user().username, // username of logged in user
     });
 
     // Clear form
@@ -64,7 +67,7 @@ class App extends Component {
           </label>
 
           <AccountsUIWrapper />
-          
+
           <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
             <input
               type="text"

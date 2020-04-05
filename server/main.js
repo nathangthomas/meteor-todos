@@ -12,7 +12,7 @@ import '../imports/api/tasks.js';
 if (Meteor.isServer) {
 Meteor.startup(function () {
 // code to run on server at startup
-process.env.MOBILE_DDP_URL = ‘http://1.1.1.1:3000 1’;
-process.env.MOBILE_ROOT_URL = ‘http://1.1.1.1:3000 1’;
+process.env.MOBILE_DDP_URL = "http://1.1.1.1:3000 1";
+process.env.MOBILE_ROOT_URL = "http://1.1.1.1:3000 1";
 });
 }

@@ -41,7 +41,6 @@ class App extends Component {
       filteredTasks = filteredTasks.filter(task => !task.checked);
     }
     return filteredTasks.map((task) => (
-    return this.props.tasks.map((task) => (
       <Task key={task._id} task={task} />
     ));
   }
@@ -83,5 +82,7 @@ class App extends Component {
 export default withTracker(() => {
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
+    incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
+
   };
 })(App);

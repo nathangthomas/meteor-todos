@@ -1,5 +1,5 @@
-# Welcome to Simple ToDos
-This application was made in order to explore Meteor and React.
+# Welcome to Meteor ToDos
+This application was made in order to further explore Meteor, React, and MongoDB.
 
 
 ### Helpful Terminal Commands:
@@ -8,9 +8,11 @@ This application was made in order to explore Meteor and React.
 `meteor` runs your local server on localhost:3000
 `meteor remove whatever-you-want-to-remvoe`
 `meteor remove whatever-you-want-to-add`
+`meteor add react-meteor-data` Allows us to create a "data container" to feed Meteor's reactive data into React's component hierarchy
 
 
 
 ### Helpful Links:
+- [Meteor Guide](https://guide.meteor.com/)
 - [Facebook's React Tutorial](https://reactjs.org/tutorial/tutorial.html)
 - [React Docs](https://reactjs.org/)

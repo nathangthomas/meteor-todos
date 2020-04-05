@@ -11,7 +11,15 @@ This application was made in order to further explore Meteor, React, and MongoDB
 `meteor add react-meteor-data` Allows us to create a "data container" to feed Meteor's reactive data into React's component hierarchy
 `meteor mongo` Opens a console into your app's local development database
 
-
+#### Running On an iOS Simulator
+`meteor install-sdk ios` Run application inside the IOS simulator
+`meteor add-platform ios` Install Xcode from the App Store
+`sudo xcodebuild -license accept` short cut for ^^
+`meteor run ios`
+`sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` Enable Xcode tools in the terminal environment
+`meteor run ios-device` Opens project in Xcode
+`meteor run ios-device --mobile-server=http://1.1.1.1:3000`
+`meteor add-platform ios` Adds iOS platform to project
 
 ### Helpful Links:
 - [Meteor Guide](https://guide.meteor.com/)

@@ -68,13 +68,15 @@ class App extends Component {
 
           <AccountsUIWrapper />
 
+          { this.props.currentUser ?
           <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
             <input
               type="text"
               ref="textInput"
-              placeholder="Type to add a new task"
-            />
-          </form>
+              placeholder="Type to add new tasks"
+              />
+          </form> : ''
+          }
 
         </header>
 

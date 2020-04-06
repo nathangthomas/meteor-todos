@@ -30,6 +30,8 @@ class App extends Component {
       username: Meteor.user().username, // username of logged in user
     });
 
+    Meteor.call('tasks.insert', text);
+
     // Clear form
     ReactDOM.findDOMNode(this.refs.textInput).value = '';
   }

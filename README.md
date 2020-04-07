@@ -1,5 +1,5 @@
 # Welcome to Meteor ToDos
-This application was made in order to further explore Meteor, React, and MongoDB.
+This application was created as an exercise to further explore Meteor, React, and MongoDB.
 
 ## Table of Contents
 <!--ts-->

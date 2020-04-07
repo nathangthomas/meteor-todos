@@ -22,7 +22,7 @@ class App extends Component {
     event.preventDefault();
     // Find the text field via the React ref
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
-    
+
     Meteor.call('tasks.insert', text);
 
     // Clear form
@@ -84,6 +84,7 @@ class App extends Component {
 }
 
 export default withTracker(() => {
+  Meteor.subscribe('tasks');
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
     incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),

@@ -27,7 +27,7 @@ https://github.com/nathangthomas/meteor-todos
   You can then run `TEST_WATCH=1 meteor test --driver-package meteortesting:mocha` to run tests.
 
 ## Live App
-You can also interact with a live version of Meteor ToDos hosted on Heroku at [App is not yet hosted on Heroku](http://localhost:3000/)
+You can also interact with a live version of Meteor ToDos hosted on Heroku [HERE](https://meteor--todos.herokuapp.com).
 
 
 ## Helpful Terminal Commands:

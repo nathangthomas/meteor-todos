@@ -1,6 +1,5 @@
 # Welcome to Meteor ToDos
 This application was created as an exercise to further explore Meteor, React, and MongoDB.
-supports collaborating on a single todo list
 
 Meteor ToDos functionality supports collaboration on a single todo list. It includes user log in log out functionality, the ability for a user to add and delete tasks, hide all tasks that have previously been checked off, as well as to create public or private tasks.
 

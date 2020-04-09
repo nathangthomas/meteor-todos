@@ -1,5 +1,9 @@
 # Welcome to Meteor ToDos
 This application was created as an exercise to further explore Meteor, React, and MongoDB.
+supports collaborating on a single todo list
+
+Meteor ToDos functionality supports collaboration on a single todo list. It includes user log in log out functionality, the ability for a user to add and delete tasks as well as to hide all tasks that have previously been checked off.
+
 
 ## Table of Contents
 <!--ts-->
@@ -19,6 +23,7 @@ https://github.com/nathangthomas/meteor-todos
 ### Run Meteor ToDos Locally
 - Type `meteor` in your terminal to spin up your server.
 - Visit [http://localhost:3000/](http://localhost:3000/) in your browser to interact with the app.
+- Run the test suite by running `TEST_WATCH=1 meteor test --driver-package meteortesting:mocha` in your terminal. 
 
 ## Live App
 You can also interact with a live version of Meteor ToDos hosted on Heroku at [App is not yet hosted on Heroku](http://localhost:3000/)
@@ -33,6 +38,7 @@ You can also interact with a live version of Meteor ToDos hosted on Heroku at [A
 - `meteor add react-meteor-data` Allows us to create a "data container" to feed Meteor's reactive data into React's component hierarchy
 - `meteor mongo` Opens a console into your app's local development database
 - `meteor add accounts-ui accounts-password` Adds packages to enable the accounts system and UI
+- `TEST_WATCH=1 meteor test --driver-package meteortesting:mocha` Run app in test mode
 
 ### Running On an iOS Simulator
 - `meteor install-sdk ios` Run application inside the IOS simulator

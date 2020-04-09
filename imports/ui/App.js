@@ -4,8 +4,8 @@ import { Meteor } from 'meteor/meteor';
 import { withTracker } from 'meteor/react-meteor-data';
 import { Tasks } from '../api/tasks.js';
 import Task from './Task.js';
-// import AccountsUIWrapper from './AccountsUIWrapper.js';
-import AccountsUIWrapper from 'imports/ui/AccountsUIWrapper.js';
+import AccountsUIWrapper from './AccountsUIWrapper.js';
+// import AccountsUIWrapper from 'imports/ui/AccountsUIWrapper.js';
 
 // App component - represents the whole app
 class App extends Component {
